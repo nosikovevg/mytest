@@ -1,9 +1,0 @@
-name: First W
-on: [push]
-
-jobs:
-  run-f-c:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Display s.t.
-        run: echo "some text!!!!!!"
