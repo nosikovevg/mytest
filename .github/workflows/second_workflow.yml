@@ -1,0 +1,26 @@
+name: Second Wf
+on: [push]
+
+jobs:
+  run-f-c:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display s.t.
+        run: echo "some text!!!!!!"
+      - name: Command in ml
+        run: |
+          node -v
+          npm -v
+
+  run-parallel:
+    runs-on: windows-latest
+    steps:
+      - name: Display 7n
+        run: echo "777777777777777!!!!!!"
+
+  run-second:
+    runs-on: macos-latest
+    needs: [run-f-c]
+    steps:
+      - name: ddd
+        run: echo "bububu"
