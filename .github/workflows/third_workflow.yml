@@ -1,0 +1,13 @@
+name: Third Wf
+on: [push]
+
+jobs:
+  run-f-c:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Command in ml
+        run: |
+          pwd
+          ls -a
+          
+          
